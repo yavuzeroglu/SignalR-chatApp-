@@ -1,0 +1,26 @@
+<div
+  class="row d-flex justify-content-center align-items-center"
+  style="height: 95vh"
+>
+  <div class="col-4">
+    <div class="card">
+      <div class="card-header">
+        <h3>Giriş Sayfası</h3>
+        <span class="text-secondary"
+          >giriş yapmak için bilgilerini doldurunuz.</span
+        >
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label>Name</label>
+          <input [(ngModel)]="name" type="text" class="form-control" />
+        </div>
+        <div class="form-group mt-2">
+          <button class="btn btn-dark w-100" (click)="login()">Giriş Yap</button>
+
+          <a class="btn btn-outline-secondary mt-3 py-2 px-4" routerLink="/register">Kayıt Ol</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
